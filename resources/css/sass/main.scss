@@ -55,14 +55,14 @@ main {
       margin-top: 3.2rem;
       border-radius: 2rem;
       height: 4rem;
-      border: 1px solid $pale-blue;
+      border: 1px solid $gray;
       font-size: 1.2rem;
       font-weight: 300;
       padding-left: 3.2rem;
       color: $dark-blue;
 
       &::placeholder {
-        color: $pale-blue;
+        color: $gray;
       }
     }
 
@@ -95,6 +95,10 @@ main {
 
       &:active {
         background-color: $blue;
+      }
+
+      &:focus-visible {
+        outline: 3px solid $dark-blue;
       }
     }
   }
@@ -158,9 +162,9 @@ footer {
 
     a {
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: inherit;
       text-decoration: none;
-      color: $light-red;
+      color: $dark-blue;
 
       &:hover {
         color: $blue;
@@ -187,18 +191,19 @@ footer {
   }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 650px) {
   header {
-    height: 9rem;
+    height: 11.2rem;
 
     img {
-      height: 2rem;
+      height: 2.6rem;
     }
   }
 
   main {
     h1 {
-      font-size: 3rem;
+      font-size: 4.8rem;
+      padding-top: 4.8rem;
     }
 
     p {
@@ -206,32 +211,50 @@ footer {
     }
 
     form {
-      width: auto;
+      width: 64rem;
 
       input {
-        width: 30rem;
-        height: 5rem;
+        width: 42rem;
+        height: 5.65rem;
         border-radius: 3rem;
-        margin-right: 1rem;
-        font-size: 2rem;
+        margin-right: 1.3rem;
+        font-size: 1.65rem;
+        padding-left: 2.9rem;
+        margin-top: 3.9rem;
       }
 
       .error-message {
-
+        position: absolute;
+        margin-left: 3.2rem;
       }
 
       button {
-        width: 15rem;
-        height: 5rem;
+        width: 20rem;
+        height: 5.65rem;
         border-radius: 3rem;
         display: inline-block;
         margin-top: 0;
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
     }
 
     img {
-      width: 50rem;
+      width: 64rem;
+      margin-top: 8.6rem;
+    }
+  }
+
+  footer {
+    margin-top: 6.7rem;
+
+    .copyright {
+      font-size: 1.2rem;
+      padding-top: 2.7rem;
+    }
+
+    .attribution {
+      font-size: 1.4rem;
+      padding-top: 2rem;
     }
   }
 }
